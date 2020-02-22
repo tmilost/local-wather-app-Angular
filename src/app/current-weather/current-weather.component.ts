@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { ICurrentWeather } from "../interfaces";
 import { asapScheduler } from 'rxjs';
-import { WeatherService } from '../wather/wather.service';
+import { WeatherService } from '../weather/weather.service';
 
 @Component({
   selector: "app-current-weather",
