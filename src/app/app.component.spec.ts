@@ -38,4 +38,11 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement;
     expect(compiled.querySelector('.content span').textContent).toContain('local-wather-app app is running!');
   });
+
+  it('should render title in a h1 tag', async(() => {
+    const fixture = TestBed.createComponent(AppComponent)
+    fixture.detectChanges()
+    const compiled = fixture.debugElement.nativeElement
+    expect(compiled.querySelector('h1').textContent).toContain('LocalCast Weather')
+  }));
 });
