@@ -1,0 +1,16 @@
+.right {
+  text-align: right
+}
+.no-margin {
+  margin-bottom: 0
+}
+.unit {
+  vertical-align: super;
+}
+.marginPicture{
+  margin-bottom: 25px;
+}
+.marginTemperature{
+  margin-top: 29px;
+}
+

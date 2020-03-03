@@ -11,10 +11,16 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
 
+import {FormsModule,ReactiveFormsModule} from '@angular/forms'
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { CitySearchComponent } from './city-search/city-search.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    CurrentWeatherComponent
+    CurrentWeatherComponent,
+    CitySearchComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +29,11 @@ import {MatCardModule} from '@angular/material/card';
     BrowserAnimationsModule,
     FlexLayoutModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   providers: [WeatherService],
   bootstrap: [AppComponent]
